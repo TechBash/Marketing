@@ -10,7 +10,6 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.sourcesDirectory)'
-    Contents: '**\*'
     TargetFolder: '$(build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
 
