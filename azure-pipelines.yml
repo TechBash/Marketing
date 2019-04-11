@@ -1,0 +1,15 @@
+trigger:
+- master
+
+name: $(Date:yyyyMMdd).$(Rev:.r)
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(build.sourcesDirectory)'
+    includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
