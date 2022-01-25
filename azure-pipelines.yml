@@ -4,7 +4,7 @@ trigger:
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: CopyFiles@2
