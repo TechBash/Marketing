@@ -3,9 +3,6 @@ trigger:
 
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
-pool:
-  vmImage: 'Ubuntu-16.04'
-
 steps:
 - task: CopyFiles@2
   inputs:
