@@ -3,6 +3,9 @@ trigger:
 
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
+pool:
+  vmImage: 'windows-2019'
+
 steps:
 - task: CopyFiles@2
   inputs:
